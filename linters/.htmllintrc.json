@@ -1,0 +1,10 @@
+{
+  "attr-no-dup": true,
+  "attr-req-value": false,
+  "id-class-style": "dash",
+  "img-req-alt": false,
+  "img-req-src": false,
+  "indent-style": "spaces",
+  "indent-width": 2,
+  "tag-name-match": true
+}

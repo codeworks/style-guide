@@ -1,0 +1,30 @@
+{
+  "name": "codeworks-style-guide",
+  "version": "1.0.0",
+  "description": "The Codeworks coding style guide",
+  "scripts": {
+    "precommit": "gulp lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codeworksbcn/style-guide"
+  },
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "cz-changelog": "^1.0.1",
+    "eslint": "^3.5.0",
+    "eslint-plugin-json": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-load-plugins": "^1.3.0",
+    "husky": "^0.13.1",
+    "stylelint-config-standard": "^13.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-changelog"
+    }
+  }
+}
