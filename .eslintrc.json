@@ -14,16 +14,11 @@
     "json"
   ],
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": ["error",2],
     "keyword-spacing": "error",
     "linebreak-style": "error",
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "no-extra-boolean-cast": "off",
+    "quotes": ["error","single"],
     "semi": "error",
     "space-before-blocks": "error",
     "space-before-function-paren": "error",
