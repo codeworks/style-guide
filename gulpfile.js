@@ -14,13 +14,13 @@ function addDefSrcIgnore (srcArr) {
   ]);
 }
 
-// Lint all files
-gulp.task('lint', ['lint-js']);
-
 // JavaScript and JSON linter
-gulp.task('lint-js', function () {
+function lintJs () {
   return gulp.src(addDefSrcIgnore(['**/*.js', '**/*.json']), {dot: true})
     .pipe($.eslint({dotfiles: true}))
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError());
-});
+}
+
+// Lint all files
+exports.lint = lintJs;
