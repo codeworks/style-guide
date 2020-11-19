@@ -86,17 +86,21 @@ const callback = function (str) {
   console.log(str);
 }
 ```
-- Don't put a space before the parentheses when you write named functions.
+- Don't put a space before the parentheses when you write named functions or call the function.
 ```js
 // Bad
 function callback (str) => {
   console.log(str);
 }
 
+callback ('hello, world!');
+
 // Good
 function callback(str) => {
   console.log(str);
 }
+
+callback('hello, world!');
 ```
 - Put a space after `async` keyword for asynchronous functions.
 ```js
