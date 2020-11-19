@@ -1,10 +1,9 @@
-
 const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 
 // Utility to ignore Node modules and Bower components
 // when generating the glob patterns array for gulp.src()
-function addDefSrcIgnore (srcArr) {
+function addDefSrcIgnore(srcArr) {
   return srcArr.concat([
     '!node_modules{,/**}',
     '!private{,/**}',
@@ -15,7 +14,7 @@ function addDefSrcIgnore (srcArr) {
 }
 
 // JavaScript and JSON linter
-function lintJs () {
+function lintJs() {
   return gulp.src(addDefSrcIgnore(['**/*.js', '**/*.json']), {dot: true})
     .pipe($.eslint({dotfiles: true}))
     .pipe($.eslint.format())

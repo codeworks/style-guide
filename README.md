@@ -74,16 +74,40 @@ function hello () {
   console.log('hello');
 }
 ```
-- Put a space between a function name and its arguments when you declare it (not when you call it).
+- Put a space before the parentheses when you write anonymous functions.
 ```js
 // Bad
-function log(str) {
+const callback = function(str) {
   console.log(str);
 }
 
 // Good
-function log (str) {
+const callback = function (str) {
   console.log(str);
+}
+```
+- Don't put a space before the parentheses when you write named functions.
+```js
+// Bad
+function callback (str) => {
+  console.log(str);
+}
+
+// Good
+function callback(str) => {
+  console.log(str);
+}
+```
+- Put a space after `async` keyword for asynchronous functions.
+```js
+// Bad
+const callback = async(str) => {
+  await Promise.resolve(str);
+}
+
+// Good
+const callback = async (str) => {
+  await Promise.resolve(str);
 }
 ```
 - Put a space before blocks, and around keywords.
